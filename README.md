@@ -39,3 +39,4 @@
 * Chọn 3 project BackEndApi-AdminApp-WebApp thành self-host
 * Chọn multiple run project: Chuột phải vào Solution và choose Properties and set Multiple Project, choose Start for 3 Projects: BackendApi, WebApp and AdminApp
 * Build Prj và F5
+* Done
