@@ -39,6 +39,14 @@
     <![endif]-->
     <!--sweet aler 2-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        .hi h1{
+            margin-top: 14px !important;
+            margin-right: 40px !important;
+            
+
+        }
+        </style>
 </head>
 <body>
     <input type="hidden" id="hidCulture" value="@culture" />
@@ -102,17 +110,23 @@
         <!-- MAIN HEADER -->
         <div id="header">
             <!-- container -->
-            <div class="container">
+            <div class="container" style="display:flex;justify-content:space-between">
                 <!-- row -->
                 <div class="row">
                     <!-- LOGO -->
                     <div class=“header-logo”> 
-                        <a href=“/” class=“logo”> 
-                            <h1 style=“text-align: left; margin: 0; padding: 10px;”>ToanBookStore</h1> </a> </div>
+                        <a href class=“logo”> 
+                            <h1 class="hi" style="
+    /* margin-bottom: -6px; */
+    margin-top: 18px;
+    margin-right: 87px;
+">BookStore</h1>
+                        </a>
+                    </div>
                     </div>
                     <!-- /LOGO -->
                     <!-- SEARCH BAR -->
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="padding-left:20px">
                         <div class="header-search">
                             <form asp-action="ViewBySearchProduct" asp-controller="Home" method="get">
                                 <input type="text" value="@ViewBag.Keyword" name="keyword" class="input" placeholder="Tìm kiếm ở đây" style="border-radius: 20px 0px 0px 20px  ;" />
@@ -135,7 +149,8 @@
                         </div>
                         <!-- /Cart -->
                     </div>
-                </div>
+                <div>
+               
                 <!-- /ACCOUNT -->
             </div>
             <!-- row -->

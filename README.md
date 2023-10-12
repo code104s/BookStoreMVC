@@ -27,6 +27,8 @@
 - Admin App
 - template : https://startbootstrap.com/template/sb-admin
 - Tich hop api
+- .....
+- Sử dụng kĩ thuât Left-join trong csdl để gán sản phẩm vào danh mục
 26: Cookie Authentication va Login Logout
 ## Cấu hình và Run
 * Git clone
