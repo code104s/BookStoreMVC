@@ -202,5 +202,11 @@ namespace eShopSolution.WebApp.Controllers
             // trả về một principal có token đã giải mã
             return principal;
         }
+
+        [HttpGet]
+        public IActionResult About()
+        {
+            return View();
+        }
     }
 }

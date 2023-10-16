@@ -27,6 +27,8 @@
 - Admin App
 - template : https://startbootstrap.com/template/sb-admin
 - Tich hop api
+- .....
+- Sử dụng kĩ thuât Left-join trong csdl để gán sản phẩm vào danh mục
 26: Cookie Authentication va Login Logout
 ## Cấu hình và Run
 * Git clone
@@ -39,3 +41,4 @@
 * Chọn 3 project BackEndApi-AdminApp-WebApp thành self-host
 * Chọn multiple run project: Chuột phải vào Solution và choose Properties and set Multiple Project, choose Start for 3 Projects: BackendApi, WebApp and AdminApp
 * Build Prj và F5
+* Done

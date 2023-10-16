@@ -120,7 +120,7 @@ namespace eShopSolution.WebApp.Controllers
             //                                                  "your_email_here", "your_password_here");
 
             var email = new EmailService.EmailService();
-            email.Send("hytranluan@gmail.com", user.ResultObj.Email, "XÁC NHẬN TÀI KHOẢN", confirmationLink);
+            email.Send("nguyenthanhtoanx2@gmail.com", user.ResultObj.Email, "XÁC NHẬN TÀI KHOẢN", confirmationLink);
             return RedirectToAction(nameof(SuccessRegistration));
         }
 
@@ -184,7 +184,7 @@ namespace eShopSolution.WebApp.Controllers
             //                                            "your_email_here", "your_password_here");
 
             var email = new EmailService.EmailService();
-            email.Send("hytranluan@gmail.com", request.Email, "Link khôi phục mật khẩu", passwordResetLink);
+            email.Send("nguyenthanhtoanx2@gmail.com", request.Email, "Link khôi phục mật khẩu", passwordResetLink);
 
             return View("ForgotPasswordConfirmation");
         }

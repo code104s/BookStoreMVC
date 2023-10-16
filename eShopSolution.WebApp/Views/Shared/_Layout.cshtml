@@ -39,6 +39,14 @@
     <![endif]-->
     <!--sweet aler 2-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        .hi h1{
+            margin-top: 14px !important;
+            margin-right: 40px !important;
+            
+
+        }
+        </style>
 </head>
 <body>
     <input type="hidden" id="hidCulture" value="@culture" />
@@ -102,17 +110,24 @@
         <!-- MAIN HEADER -->
         <div id="header">
             <!-- container -->
-            <div class="container">
+            <div class="container" style="display:flex;justify-content:space-between">
                 <!-- row -->
                 <div class="row">
                     <!-- LOGO -->
                     <div class=“header-logo”> 
-                        <a href=“/” class=“logo”> 
-                            <h1 style=“text-align: left; margin: 0; padding: 10px;”>ToanBookStore</h1> </a> </div>
+                        <a href class=“logo”> 
+                            <h1 class="hi" style="
+    /* margin-bottom: -6px; */
+    margin-top: 18px;
+    margin-right: 87px;
+    white-space:nowrap;
+">Thế Giới Sách</h1>
+                        </a>
+                    </div>
                     </div>
                     <!-- /LOGO -->
                     <!-- SEARCH BAR -->
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="padding-left:20px">
                         <div class="header-search">
                             <form asp-action="ViewBySearchProduct" asp-controller="Home" method="get">
                                 <input type="text" value="@ViewBag.Keyword" name="keyword" class="input" placeholder="Tìm kiếm ở đây" style="border-radius: 20px 0px 0px 20px  ;" />
@@ -135,7 +150,8 @@
                         </div>
                         <!-- /Cart -->
                     </div>
-                </div>
+                <div>
+               
                 <!-- /ACCOUNT -->
             </div>
             <!-- row -->
@@ -189,13 +205,12 @@
                         <div class="footer">
                             <h3 class="footer-title">Về chúng tôi</h3>
                             <p>
-                                NHÀ SÁCH TRỰC TUYẾN
-                                Mua sách online tại nhà sách trực tuyến để được cập nhật nhanh nhất các tựa sách đủ thể loại với mức giảm 15 – 35% cùng nhiều ưu đãi, quà tặng kèm.
+                                Mua sách online tại Thế Giới Sách để được cập nhật nhanh nhất các tựa sách đủ thể loại cùng nhiều ưu đãi và quà tặng kèm.
                             </p>
                             <ul class="footer-links">
                                 <li><a href="#"><i class="fa fa-map-marker"></i>124 Thanh Xuân , Hà Nội</a></li>
                                 <li><a href="#"><i class="fa fa-phone"></i>0333124183</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i>nguyenthanhtoanx2@gmail.com</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o"></i>thanhtoanx2@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -219,7 +234,7 @@
                         <div class="footer">
                             <h3 class="footer-title">Thông tin</h3>
                             <ul class="footer-links">
-                                <li><a href="#">Về chúng tôi</a></li>
+                                <li><a asp-action="About" asp-controller="Home">Thông tin</a></li>
                                 <li><a href="#">Liên hệ</a></li>
                                 <li><a href="#">Chính sách bảo mật</a></li>
                                 <li><a href="#">Điều khoản và điều kiện</a></li>
